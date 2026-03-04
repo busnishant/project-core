@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+.env
+data/logs/
+data/stor/msgs.json
+data/stor/usrs.json
+*.log

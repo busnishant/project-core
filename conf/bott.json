@@ -1,0 +1,9 @@
+{
+    "botName": "Aaradhya",
+    "defaultMode": "base",
+    "maxHistory": 20,
+    "replyOnMention": true,
+    "replyOnReply": true,
+    "replyOnDM": true,
+    "autoChannel": null
+}
