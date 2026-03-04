@@ -51,12 +51,12 @@ Copy `.exnv` → `.env` and fill in real values. **Never commit `.env`.**
 | `maxTokens` | number | `512` | Max tokens in the AI reply. |
 | `temperature` | number | `0.85` | Creativity. `0` = deterministic, `1` = very varied. |
 | `siteUrl` | string | your repo URL | Sent as `HTTP-Referer` header to OpenRouter. |
-| `siteName` | string | `CoreBot` | Sent as `X-Title` header to OpenRouter. |
+| `siteName` | string | `Aaradhya` | Sent as `X-Title` header to OpenRouter. |
 
 ### `conf/bott.json`
 | Field | Type | Default | What it controls |
 |---|---|---|---|
-| `botName` | string | `CoreBot` | Display name used in logs. |
+| `botName` | string | `Aaradhya` | Display name used in logs. |
 | `defaultMode` | string | `base` | Persona used when a user has no saved preference. |
 | `maxHistory` | number | `20` | Max messages kept per user in `msgs.json`. Oldest trimmed first. |
 

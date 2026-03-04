@@ -1,6 +1,9 @@
 {
-  "name": "core",
+  "name": "project-core",
   "version": "1.0.0",
+  "description": "Aaradhya — personal Discord bot",
+  "author": "projectcore",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "node core/boot.js",

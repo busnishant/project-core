@@ -1,15 +1,5 @@
-// mind/tone.js
-// Builds the complete Aaradhya system prompt by combining all soul layers:
-//   1. mind/soul/core.md  — who she is
-//   2. mind/soul/tone.md  — how she talks
-//   3. mind/soul/rule.md  — limits and rules
-//   4. mind/know/self.md  — opinions, likes, dislikes
-//   5. mind/know/slng.md  — slang and speech habits
-//   6. mind/memo/user.md  — how she treats the user
-//   7. mind/memo/wrld.md  — her world context
-//   8. mind/mask/<mode>.md — active persona modifier
-//
-// Exposes: getMode(), setMode(), getMaskPrompt(), VALID_MODES
+// builds the system prompt from mind/ files
+// order matters — soul files load first
 
 import { readFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
@@ -39,7 +29,7 @@ Max 1 emoji. Sometimes zero.
 Never start reply with the word "I".
 Make every reply feel like a real girl typed it on her phone at night — warm, short, a little mischievous, genuinely there.`;
 
-// Ordered list of soul layer files loaded for every prompt
+// order matters here — soul files must load first
 const SOUL_LAYERS = [
     join(SOUL_DIR, 'core.md'),
     join(SOUL_DIR, 'tone.md'),
@@ -73,7 +63,7 @@ const KNOWLEDGE_FILES = [
 ];
 
 /**
- * Check if a file's content is still just placeholder scaffolding.
+ * Check if a file's content is still just placeholder .
  * Returns true if the file only has HTML comments or Status: ⏳ lines.
  * @param {string} content
  * @returns {boolean}

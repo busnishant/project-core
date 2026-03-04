@@ -299,7 +299,7 @@
 - **Status:** ✅ Done
 
 ### `read/skll.md`
-- **Purpose:** Antigravity agent skill definition — identity, rules, knowledge, session protocol, and personality.
+- **Purpose:** projectcore agent skill definition — identity, rules, knowledge, session protocol, and personality.
 - **Status:** ✅ Done
 
 ### `read/oprr.md`

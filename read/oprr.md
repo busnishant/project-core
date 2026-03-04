@@ -1,5 +1,5 @@
 # OpenRouter Reference
-> Everything Antigravity needs to know about OpenRouter.
+> Everything projectcore needs to know about OpenRouter.
 > This is the only place to look for API details on this project.
 
 ---

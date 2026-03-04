@@ -1,6 +1,4 @@
-// core/load.js
-// Bootstrap sequence — wires together client, commands, and events in order.
-// Called once from boot.js before logging in.
+// loads commands and events on startup
 
 import { client } from '../disc/clnt.js';
 import { registerCommands } from '../disc/regs.js';

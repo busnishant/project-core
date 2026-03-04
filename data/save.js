@@ -1,7 +1,5 @@
-// data/save.js
-// Safe read/write helpers for JSON flat-file persistence.
-// Accepts ABSOLUTE paths — callers build paths using path.join(__dirname, ...).
-// All operations are synchronous to avoid race conditions on small JSON files.
+// read/write helper for JSON files
+// all paths are absolute — don't change this
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { basename } from 'path';
@@ -29,6 +27,8 @@ export function readJSON(absPath, fallback = {}) {
  * @param {string} absPath - Absolute path to the JSON file
  * @param {*} data - Serialisable JS value
  */
+// always use absolute paths here or it breaks
+// on Railway — learned this the hard way
 export function writeJSON(absPath, data) {
     try {
         writeFileSync(absPath, JSON.stringify(data, null, 2), 'utf-8');

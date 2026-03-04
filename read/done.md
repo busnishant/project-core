@@ -38,7 +38,7 @@
 
 ---
 
-## [2026-03-04] Knowledge base scaffold — 13 files, loadKnowledge() wired
+## [2026-03-04] Knowledge base  — 13 files, loadKnowledge() wired
 
 
 - What was done: Created 13 placeholder files across `mind/grow/`, `mind/nios/`, `mind/life/`, `mind/wrld/`. Added `loadKnowledge()` to `mind/tone.js` — reads nios/, life/, grow/jour+wins, skips placeholder-only files silently, injects between soul layers and mask. Updated `read/next.md` with 4-phase fill pipeline. Updated `read/maps.md`.
@@ -105,11 +105,11 @@
 
 ---
 
-## [2026-03-04] Full project scaffold
+## [2026-03-04] Full project 
 
-- What was done: Generated all 33 project files from scratch — core/, disc/, mind/, cmds/, data/, util/, conf/, and root config files.
+- What was done:  all 33 project files from scratch — core/, disc/, mind/, cmds/, data/, util/, conf/, and root config files.
 - Files changed: All files (initial creation)
-- Why: Initial scaffold for a personal Discord AI chatbot using Discord.js v14 + OpenRouter.
+- Why: Initial  for a personal Discord AI chatbot using Discord.js v14 + OpenRouter.
 
 ---
 

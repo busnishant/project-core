@@ -1,7 +1,5 @@
-// mind/chat.js
-// Calls OpenRouter using native fetch(). No SDK. No axios.
-// All config — model, baseUrl, tokens, temperature, headers — from conf/aicf.json.
-// API key comes from OPENROUTER_API_KEY in .env. Never hardcoded.
+// handles all AI API calls
+// change model in conf/aicf.json
 
 import { readJSON } from '../data/save.js';
 import { log } from '../data/logs.js';
@@ -20,6 +18,7 @@ export async function askAI(messages) {
     const config = readJSON(CONF_FILE);
     const t0 = Date.now();
 
+    // this took forever to get right, don't break it
     const res = await fetch(config.baseUrl, {
         method: 'POST',
         headers: {

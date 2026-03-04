@@ -65,6 +65,8 @@ export async function execute(interaction) {
                 log.info('wipe', `${toDelete.size} messages targeted out of ${msgs} requested`);
 
                 if (toDelete.size > 0) {
+                    // bulkDelete only works on messages under 14 days
+                    // older ones get deleted one by one below
                     const result = await channel.bulkDelete(toDelete, true);
                     count = result.size;
                     log.info('wipe', `deleted=${count}`);

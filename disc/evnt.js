@@ -1,14 +1,5 @@
-// disc/evnt.js
-// Registers Discord client event listeners.
-// Handles: ready, interactionCreate (slash commands), messageCreate (mention/reply/DM).
-//
-// messageCreate triggers Aaradhya's AI reply in 3 cases:
-//   1. Bot is @mentioned in a server channel (respects autoChannel if set)
-//   2. User replies directly to one of the bot's messages (respects autoChannel)
-//   3. User sends the bot a Direct Message (always works, no channel filter)
-//
-// Dedup: processedMessages Set prevents double-replies from Discord re-delivering events.
-// autoChannel: if set in bott.json, mention/reply only work in that channel.
+// listens for mentions, replies, and DMs
+// add new triggers here if needed
 
 import { Events, ChannelType } from 'discord.js';
 import { readFileSync } from 'fs';
@@ -110,6 +101,7 @@ export function registerEvents(client) {
         if (!message.content?.trim()) return;
 
         // ── Dedup guard ───────────────────────────────────────────────
+        // without this it fires twice, no idea why
         if (processedMessages.has(message.id)) return;
         processedMessages.add(message.id);
 

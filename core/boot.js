@@ -1,5 +1,4 @@
-// core/boot.js
-// Entry point. Loads env, bootstraps client, logs in to Discord.
+// entry point — starts everything
 
 import { loadEnv } from './envs.js';
 import { bootstrap } from './load.js';
