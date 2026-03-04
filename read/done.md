@@ -4,6 +4,12 @@
 
 ---
 
+## [2026-03-04] Full master.md Audit
+
+- What was done: Audited the entire project against new `master.md`. Verified folder structures, file existence, content validity for `mind/` files, command execution standards (defer, editReply), and environment configs. Generated a discrepancy report. Updated `master.md` to exact reality (marked placeholders, missing commands). Updated mappings in `maps.md` and bugs in `errs.md`.
+- Files changed: `read/master.md`, `read/maps.md`, `read/errs.md`, `read/done.md`
+- Why: To keep the project's foundational reference document strictly truthful.
+
 ## [2026-03-04] Revert to OpenRouter
 
 - What was done: Completely reverted the Gemini 2.5 Pro migration back to OpenRouter. Restored `OPENROUTER_API_KEY` across `.exnv`, `.env`, and `envs.js`. Restored `conf/aicf.json` to Hermes 2 Pro. Rewrote `mind/chat.js` back to standard OpenRouter `fetch()` and `mind/memo.js` back to OpenAI message formats (`role: "user"/"assistant"`). Cleared history stores.

@@ -4,6 +4,22 @@
 
 ---
 
+## Empty Knowledge Base Files
+
+- **File:** `mind/nios/*.md`, `mind/life/*.md`, `mind/grow/*.md`, `mind/wrld/*.md`
+- **Problem:** Files exist but contain only HTML comments or placeholder headers. Most are wired into `tone.js` but contribute nothing. `fear.md`, `chng.md`, `tech.md`, `news.md`, `lang.md` are not even wired in `tone.js`. `know/refs.md` has content but is not wired.
+- **Status:** 🔴 Open
+- **Fix applied:** None yet. Logged during master.md audit.
+
+---
+
+## Missing Commands
+
+- **File:** `cmds/help.js`, `cmds/vibe.js`
+- **Problem:** Commands were documented in the master guide but do not actually exist in the project.
+- **Status:** 🔴 Open
+- **Fix applied:** None yet. Added to next.md pipeline.
+
 ## Relative path passed to readJSON in chat.js
 
 - **File:** `mind/chat.js`

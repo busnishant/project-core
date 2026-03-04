@@ -7,7 +7,9 @@
 ## 🧠 Knowledge Base Pipeline — Fill In Order
 
 > Fill one file at a time. After filling any file — test with `/ask` immediately.
+> Fill one file at a time. After filling any file — test with `/ask` immediately.
 > Aaradhya uses it automatically. No code changes ever needed.
+> *Note from Audit: Most of these files exist but are empty placeholders right now. `fear`, `chng`, `tech`, `news`, `lang` are not even wired yet into `tone.js`.*
 
 ### Phase 1 — NIOS Core (Priority 1)
 - [ ] `mind/nios/info.md` → what NIOS is, how it works
@@ -47,14 +49,13 @@
 
 ---
 
-## Priority 2 — Add a `/help` command
+## Priority 2 — Add `/help` and `/vibe` commands
 
 - **What needs to happen:**
-  - Create `cmds/help.js` with a `/help` slash command
-  - Reply with an embed listing all commands, their descriptions, and the active persona
-  - No AI call needed — purely informational
-- **Files affected:** `cmds/help.js` (new)
-- **Why:** New users have no way to discover commands without reading external docs.
+  - Create `cmds/help.js` to list all commands, descriptions, and active persona. No AI call needed.
+  - Create `cmds/vibe.js` to show the current personality mode for the user.
+- **Files affected:** `cmds/help.js` (new), `cmds/vibe.js` (new)
+- **Why:** Documented in master guide but missing from codebase. New users can't discover features easily.
 
 ---
 
