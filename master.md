@@ -43,6 +43,7 @@ Never hardcoded anywhere in the project.
 FOLDER STRUCTURE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+```text
 root/
 ├── .env
 ├── .exnv
@@ -133,6 +134,7 @@ root/
     ├── errs.js
     ├── frmt.js
     └── prse.js
+```
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BOT BEHAVIOR
