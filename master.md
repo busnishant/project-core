@@ -43,96 +43,95 @@ Never hardcoded anywhere in the project.
 FOLDER STRUCTURE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-project-core/
-├── cmds/           slash commands
+root/
+├── .env
+├── .exnv
+├── .gitignore
+├── master.md
+├── package.json
+├── cmds/
 │   ├── askk.js     /ask — talk to Aaradhya
-│   ├── mode.js     /mode — switch personality
-│   ├── wipe.js     /wipe — delete msgs or memory
-│   ├── setup.js    /setup — set bot channel
 │   ├── help.js     /help — list all commands
-│   └── vibe.js     /vibe — check current mode
-├── conf/           config files
+│   ├── mode.js     /mode — switch personality
+│   ├── setup.js    /setup — set bot channel
+│   ├── vibe.js     /vibe — check current mode
+│   └── wipe.js     /wipe — delete msgs or memory
+├── conf/
 │   ├── aicf.json   AI model, baseUrl, temperature
-│   ├── bott.json   bot name, modes, history limits, triggers, autoChannel
+│   ├── bott.json   bot settings, autoChannel, triggers
 │   └── perm.json   allowed users and roles
-├── core/           runtime engine
+├── core/
 │   ├── boot.js     entry point
-│   ├── load.js     bootstrap sequence
 │   ├── envs.js     env loader
+│   ├── load.js     bootstrap sequence
 │   └── push.js     deploy slash commands
-├── data/           persistence
+├── data/
+│   ├── logs.js     logger — industry standard
 │   ├── save.js     JSON read/write helper
-│   ├── logs.js     logger — industry standard format
-│   ├── logs/       daily log files
-│   └── stor/       
+│   ├── logs/       daily log files (gitignored)
+│   └── stor/
 │       ├── msgs.json   per-user chat history
-│       └── usrs.json   per-user settings and mode
-├── disc/           Discord layer
+│       └── usrs.json   per-user mode settings
+├── disc/
 │   ├── clnt.js     Discord client + intents + partials
 │   ├── evnt.js     mention, reply, DM triggers
 │   └── regs.js     slash command auto-loader
-├── mind/           AI brain
+├── mind/
 │   ├── chat.js     OpenRouter API fetch call
 │   ├── memo.js     conversation history per user
 │   ├── tone.js     builds system prompt from files
-│   ├── soul/       core identity files
-│   │   ├── core.md     ✅ Has content — loaded
-│   │   ├── tone.md     ✅ Has content — loaded
-│   │   ├── rule.md     ✅ Has content — loaded
-│   │   └── back.md     ✅ Has content — loaded
-│   ├── mask/       mood modes
-│   │   ├── base.md     ✅ Has content — loaded
-│   │   ├── calm.md     ✅ Has content — loaded
-│   │   ├── hype.md     ✅ Has content — loaded
-│   │   └── sass.md     ✅ Has content — loaded
-│   ├── memo/       contextual knowledge
-│   │   ├── user.md     ✅ Has content — loaded
-│   │   └── wrld.md     ✅ Has content — loaded
+│   ├── grow/       growth over time (all 🔴 empty)
+│   │   ├── chng.md
+│   │   ├── fear.md
+│   │   ├── jour.md
+│   │   └── wins.md
 │   ├── know/       personality depth
-│   │   ├── self.md     ✅ Has content — loaded
-│   │   ├── refs.md     ⚠️ Has content — NOT loaded
-│   │   └── slng.md     ✅ Has content — loaded
-│   ├── nios/       NIOS academic knowledge
-│   │   ├── info.md     ✅ Has content — loaded
-│   │   ├── subj.md     🔴 Empty — placeholder only
-│   │   ├── exam.md     🔴 Empty — placeholder only
-│   │   ├── tma.md      🔴 Empty — placeholder only
-│   │   ├── tips.md     🔴 Empty — placeholder only
-│   │   └── faqs.md     🔴 Empty — placeholder only
+│   │   ├── refs.md     ⚠️ has content — not loaded
+│   │   ├── self.md     ✅ has content — loaded
+│   │   └── slng.md     ✅ has content — loaded
 │   ├── life/       life knowledge
-│   │   ├── hlth.md     ✅ Has content — loaded
-│   │   ├── rout.md     🔴 Empty — placeholder only
-│   │   ├── food.md     🔴 Empty — placeholder only
-│   │   └── fest.md     🔴 Empty — placeholder only
-│   ├── grow/       growth over time
-│   │   ├── jour.md     🔴 Empty — placeholder only
-│   │   ├── wins.md     🔴 Empty — placeholder only
-│   │   ├── fear.md     🔴 Empty — placeholder only (NOT loaded)
-│   │   ├── chng.md     🔴 Empty — placeholder only
-│   └── wrld/       world knowledge (all 🔴 Empty — placeholder only, not loaded)
-│       ├── tech.md     tech she is learning
-│       ├── news.md     world awareness
-│       └── lang.md     languages
-├── read/           documentation
-│   ├── maps.md     every file mapped with status
-│   ├── flow.md     how data flows through the bot
+│   │   ├── fest.md     🔴 empty
+│   │   ├── food.md     🔴 empty
+│   │   ├── hlth.md     ✅ has content — loaded
+│   │   └── rout.md     🔴 empty
+│   ├── mask/       mood modes
+│   │   ├── base.md     ✅ loaded
+│   │   ├── calm.md     ✅ loaded
+│   │   ├── hype.md     ✅ loaded
+│   │   ├── sass.md     ✅ loaded
+│   │   └── test.md     🔴 empty
+│   ├── memo/       contextual knowledge
+│   │   ├── user.md     ✅ loaded
+│   │   └── wrld.md     ✅ loaded
+│   ├── nios/       NIOS academic knowledge
+│   │   ├── exam.md     🔴 empty
+│   │   ├── faqs.md     🔴 empty
+│   │   ├── info.md     ✅ loaded
+│   │   ├── subj.md     🔴 empty
+│   │   ├── tips.md     🔴 empty
+│   │   └── tma.md      🔴 empty
+│   ├── soul/       core identity
+│   │   ├── back.md     ✅ loaded
+│   │   ├── core.md     ✅ loaded
+│   │   ├── rule.md     ✅ loaded
+│   │   └── tone.md     ✅ loaded
+│   └── wrld/       world knowledge (all 🔴 empty)
+│       ├── lang.md
+│       ├── news.md
+│       └── tech.md
+├── read/
 │   ├── done.md     completed work log
-│   ├── next.md     pipeline — what comes next
 │   ├── errs.md     bug and error tracker
-│   ├── stck.md     full tech stack reference
+│   ├── flow.md     data flow documentation
+│   ├── maps.md     every file mapped with status
+│   ├── next.md     pipeline — what comes next
+│   ├── oprr.md     OpenRouter reference
 │   ├── skll.md     agent skill definition
-│   ├── oprr.md     OpenRouter reference doc
-│   ├── kbase.md    knowledge base guidelines
-│   ├── logs.md     logging system docs
-│   ├── rdme.md     project README
-│   └── refi.md     refinement notes
-├── util/           shared helpers
-│   ├── frmt.js     text formatter + cleanMention()
-│   ├── prse.js     input parser
-│   └── errs.js     centralized error handler
-├── .env            secrets — never committed
-├── .exnv           safe example env file
-└── package.json    project metadata
+│   └── stck.md     full tech stack reference
+└── util/
+    ├── errs.js     centralized error handler
+    ├── frmt.js     text formatter + cleanMention()
+    └── prse.js     input parseradata
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BOT BEHAVIOR
@@ -348,4 +347,9 @@ Phase 4 — Automation (future)
 ## Last Synced
 Date: 2026-03-04
 Synced by: projectcore
-Status: Core systems healthy, but secondary commands (/help, /vibe) are missing and many mind/ files are empty placeholders.
+Status: Structure clean and verified. 6 commands
+registered and working. Core personality loaded.
+Knowledge base files (nios/, grow/, wrld/, life/)
+are empty placeholders — ready to fill in Phase 2.
+Known issue: know/refs.md exists but not loaded
+by tone.js — add to load order next session.
