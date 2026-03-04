@@ -17,8 +17,8 @@
 
 - **File:** `cmds/help.js`, `cmds/vibe.js`
 - **Problem:** Commands were documented in the master guide but do not actually exist in the project.
-- **Status:** 🔴 Open
-- **Fix applied:** None yet. Added to next.md pipeline.
+- **Status:** ✅ Fixed
+- **Fix applied:** Created `help.js` (lists commands, no AI call) and `vibe.js` (displays current mode).
 
 ## Relative path passed to readJSON in chat.js
 

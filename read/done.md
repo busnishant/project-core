@@ -4,6 +4,12 @@
 
 ---
 
+## [2026-03-04] Structural Cleanup and Command Completion
+
+- What was done: Moved `master.md` to root. Deleted obsolete documentation files from `read/`. Created missing `cmds/help.js` and `cmds/vibe.js` commands. Verified all naming conventions (max 5 chars) and updated maps and error tracker.
+- Files changed: `master.md` (moved), `cmds/help.js` (new), `cmds/vibe.js` (new), `read/maps.md`, `read/done.md`, `read/errs.md`
+- Why: Structural sanitization as directed in `master.md` to keep codebase lightweight.
+
 ## [2026-03-04] Full master.md Audit
 
 - What was done: Audited the entire project against new `master.md`. Verified folder structures, file existence, content validity for `mind/` files, command execution standards (defer, editReply), and environment configs. Generated a discrepancy report. Updated `master.md` to exact reality (marked placeholders, missing commands). Updated mappings in `maps.md` and bugs in `errs.md`.

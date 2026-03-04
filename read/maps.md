@@ -78,6 +78,18 @@
 - **Exports:** `data`, `execute`
 - **Status:** ✅ Done
 
+### `cmds/help.js`
+- **Purpose:** `/help` — Lists all commands ephemerally. No AI call needed.
+- **Imports:** `discord.js`, `mind/tone.js`, `util/errs.js`
+- **Exports:** `data`, `execute`
+- **Status:** ✅ Done
+
+### `cmds/vibe.js`
+- **Purpose:** `/vibe` — Shows current mode for this user.
+- **Imports:** `discord.js`, `mind/tone.js`, `util/errs.js`
+- **Exports:** `data`, `execute`
+- **Status:** ✅ Done
+
 ### `cmds/setup.js`
 - **Purpose:** `/setup channel:#name` — saves a channel ID to `conf/bott.json.autoChannel`. Mention and reply triggers only work in that channel after this. DMs unaffected. ManageGuild permission required.
 - **Imports:** `discord.js`, `data/save.js`, `util/errs.js`, `path`, `url`
@@ -298,20 +310,4 @@
 
 ### `read/oprr.md`
 - **Purpose:** OpenRouter API reference — base URL, auth, free models, rate limits, and how to switch models.
-- **Status:** ✅ Done
-
-### `read/kbase.md`
-- **Purpose:** Guidelines for filling knowledge base files.
-- **Status:** ✅ Done
-
-### `read/logs.md`
-- **Purpose:** Logging system documentation.
-- **Status:** ✅ Done
-
-### `read/rdme.md`
-- **Purpose:** Project README.
-- **Status:** ✅ Done
-
-### `read/refi.md`
-- **Purpose:** Character refinement notes.
 - **Status:** ✅ Done

@@ -48,7 +48,9 @@ project-core/
 │   ├── askk.js     /ask — talk to Aaradhya
 │   ├── mode.js     /mode — switch personality
 │   ├── wipe.js     /wipe — delete msgs or memory
-│   └── setup.js    /setup — set bot channel
+│   ├── setup.js    /setup — set bot channel
+│   ├── help.js     /help — list all commands
+│   └── vibe.js     /vibe — check current mode
 ├── conf/           config files
 │   ├── aicf.json   AI model, baseUrl, temperature
 │   ├── bott.json   bot name, modes, history limits, triggers, autoChannel
@@ -211,10 +213,10 @@ COMMANDS — CURRENT STATE
 → Saves channelId to conf/bott.json autoChannel.
 
 /help
-❌ Missing entirely. Command file does not exist.
+→ Lists all commands ephemerally.
 
 /vibe
-❌ Missing entirely. Command file does not exist.
+→ Shows current mode for this user.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 OPENROUTER INTEGRATION
