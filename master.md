@@ -50,88 +50,89 @@ root/
 ├── master.md
 ├── package.json
 ├── cmds/
-│   ├── askk.js     /ask — talk to Aaradhya
-│   ├── help.js     /help — list all commands
-│   ├── mode.js     /mode — switch personality
-│   ├── setup.js    /setup — set bot channel
-│   ├── vibe.js     /vibe — check current mode
-│   └── wipe.js     /wipe — delete msgs or memory
+│   ├── askk.js
+│   ├── help.js
+│   ├── mode.js
+│   ├── setup.js
+│   ├── vibe.js
+│   └── wipe.js
 ├── conf/
-│   ├── aicf.json   AI model, baseUrl, temperature
-│   ├── bott.json   bot settings, autoChannel, triggers
-│   └── perm.json   allowed users and roles
+│   ├── aicf.json
+│   ├── bott.json
+│   └── perm.json
 ├── core/
-│   ├── boot.js     entry point
-│   ├── envs.js     env loader
-│   ├── load.js     bootstrap sequence
-│   └── push.js     deploy slash commands
+│   ├── boot.js
+│   ├── envs.js
+│   ├── load.js
+│   └── push.js
 ├── data/
-│   ├── logs.js     logger — industry standard
-│   ├── save.js     JSON read/write helper
-│   ├── logs/       daily log files (gitignored)
+│   ├── logs.js
+│   ├── save.js
+│   ├── logs/
+│   │   ├── .gitkeep
+│   │   └── 2026-03-04.log
 │   └── stor/
-│       ├── msgs.json   per-user chat history
-│       └── usrs.json   per-user mode settings
+│       ├── msgs.json
+│       └── usrs.json
 ├── disc/
-│   ├── clnt.js     Discord client + intents + partials
-│   ├── evnt.js     mention, reply, DM triggers
-│   └── regs.js     slash command auto-loader
+│   ├── clnt.js
+│   ├── evnt.js
+│   └── regs.js
 ├── mind/
-│   ├── chat.js     OpenRouter API fetch call
-│   ├── memo.js     conversation history per user
-│   ├── tone.js     builds system prompt from files
-│   ├── grow/       growth over time (all 🔴 empty)
-│   │   ├── chng.md
-│   │   ├── fear.md
-│   │   ├── jour.md
-│   │   └── wins.md
-│   ├── know/       personality depth
-│   │   ├── refs.md     ⚠️ has content — not loaded
+│   ├── chat.js
+│   ├── memo.js
+│   ├── tone.js
+│   ├── grow/
+│   │   ├── chng.md     🔴 empty — placeholder only
+│   │   ├── fear.md     🔴 empty — placeholder only
+│   │   ├── jour.md     🔴 empty — placeholder only
+│   │   └── wins.md     🔴 empty — placeholder only
+│   ├── know/
+│   │   ├── refs.md     ⚠️  has content — not loaded
 │   │   ├── self.md     ✅ has content — loaded
 │   │   └── slng.md     ✅ has content — loaded
-│   ├── life/       life knowledge
-│   │   ├── fest.md     🔴 empty
-│   │   ├── food.md     🔴 empty
+│   ├── life/
+│   │   ├── fest.md     🔴 empty — placeholder only
+│   │   ├── food.md     🔴 empty — placeholder only
 │   │   ├── hlth.md     ✅ has content — loaded
-│   │   └── rout.md     🔴 empty
-│   ├── mask/       mood modes
-│   │   ├── base.md     ✅ loaded
-│   │   ├── calm.md     ✅ loaded
-│   │   ├── hype.md     ✅ loaded
-│   │   ├── sass.md     ✅ loaded
-│   │   └── test.md     🔴 empty
-│   ├── memo/       contextual knowledge
-│   │   ├── user.md     ✅ loaded
-│   │   └── wrld.md     ✅ loaded
-│   ├── nios/       NIOS academic knowledge
-│   │   ├── exam.md     🔴 empty
-│   │   ├── faqs.md     🔴 empty
-│   │   ├── info.md     ✅ loaded
-│   │   ├── subj.md     🔴 empty
-│   │   ├── tips.md     🔴 empty
-│   │   └── tma.md      🔴 empty
-│   ├── soul/       core identity
-│   │   ├── back.md     ✅ loaded
-│   │   ├── core.md     ✅ loaded
-│   │   ├── rule.md     ✅ loaded
-│   │   └── tone.md     ✅ loaded
-│   └── wrld/       world knowledge (all 🔴 empty)
-│       ├── lang.md
-│       ├── news.md
-│       └── tech.md
+│   │   └── rout.md     🔴 empty — placeholder only
+│   ├── mask/
+│   │   ├── base.md     ✅ has content — loaded
+│   │   ├── calm.md     ✅ has content — loaded
+│   │   ├── hype.md     ✅ has content — loaded
+│   │   └── sass.md     ✅ has content — loaded
+│   ├── memo/
+│   │   ├── user.md     ✅ has content — loaded
+│   │   └── wrld.md     ✅ has content — loaded
+│   ├── nios/
+│   │   ├── exam.md     🔴 empty — placeholder only
+│   │   ├── faqs.md     🔴 empty — placeholder only
+│   │   ├── info.md     ✅ has content — loaded
+│   │   ├── subj.md     🔴 empty — placeholder only
+│   │   ├── tips.md     🔴 empty — placeholder only
+│   │   └── tma.md      🔴 empty — placeholder only
+│   ├── soul/
+│   │   ├── back.md     ✅ has content — loaded
+│   │   ├── core.md     ✅ has content — loaded
+│   │   ├── rule.md     ✅ has content — loaded
+│   │   └── tone.md     ✅ has content — loaded
+│   └── wrld/
+│       ├── lang.md     🔴 empty — placeholder only
+│       ├── news.md     🔴 empty — placeholder only
+│       └── tech.md     🔴 empty — placeholder only
 ├── read/
-│   ├── done.md     completed work log
-│   ├── errs.md     bug and error tracker
-│   ├── flow.md     data flow documentation
-│   ├── maps.md     every file mapped with status
-│   ├── next.md     pipeline — what comes next
-│   ├── oprr.md     OpenRouter reference
-│   ├── skll.md     agent skill definition
-│   └── stck.md     full tech stack reference
+│   ├── done.md
+│   ├── errs.md
+│   ├── flow.md
+│   ├── maps.md
+│   ├── next.md
+│   ├── oprr.md
+│   ├── skll.md
+│   └── stck.md
 └── util/
-    ├── errs.js     centralized error handler
-    ├── frmt.js     text formatter + cleanMention()
-    └── prse.js     input parseradata
+    ├── errs.js
+    ├── frmt.js
+    └── prse.js
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BOT BEHAVIOR
@@ -192,30 +193,25 @@ COMMANDS — CURRENT STATE
 /ask [prompt]
 → Talk to Aaradhya. Uses full AI pipeline.
 
-/mode [base|calm|sass|hype]
-→ Switch personality mode.
+/help
+→ List all commands and see what Aaradhya can do.
+
+/mode [persona]
+→ Switch how Aaradhya responds (base, calm, sass, hype).
 → Saves to usrs.json per user.
-→ Replies:
-   base: "back to normal 😊 what's up?"
-   calm: "okay, i'm here. take your time."
-   sass: "alright, don't say i didn't warn you 😂"
-   hype: "let's gooo — tell me something good!"
 
-/wipe msgs:[1-100] mem:[1]
-→ msgs — delete that many Discord messages
-→ mem — clear chat memory for this user
-→ Both can be used together
-→ Defers immediately to avoid timeout
-
-/setup [#channel]
-→ Locks bot to one channel.
+/setup [channel]
+→ Pick which channel Aaradhya responds in (server owner only).
 → Saves channelId to conf/bott.json autoChannel.
 
-/help
-→ Lists all commands ephemerally.
-
 /vibe
-→ Shows current mode for this user.
+→ Check which personality mode Aaradhya is currently using for you.
+
+/wipe [msgs] [mem]
+→ Delete our recent messages and/or clear your chat memory.
+→ msgs: how many messages to delete (1-100)
+→ mem: clear my chat memory? (1 = yes)
+→ Both can be used together.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 OPENROUTER INTEGRATION
@@ -317,12 +313,12 @@ ON END:
 FUTURE PIPELINE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Phase 1 — Stability (current)
+Phase 1 — Stability ✅ complete
 - Fix all interaction timeout errors
 - Fix double reply bug
 - Verify all 6 commands work cleanly
 
-Phase 2 — Knowledge base
+Phase 2 — Knowledge base (current)
 - Fill mind/nios/ files with real NIOS data
 - Fill mind/life/hlth.md with PTSD support data
 - Fill mind/grow/ files over time
@@ -347,9 +343,4 @@ Phase 4 — Automation (future)
 ## Last Synced
 Date: 2026-03-04
 Synced by: projectcore
-Status: Structure clean and verified. 6 commands
-registered and working. Core personality loaded.
-Knowledge base files (nios/, grow/, wrld/, life/)
-are empty placeholders — ready to fill in Phase 2.
-Known issue: know/refs.md exists but not loaded
-by tone.js — add to load order next session.
+Status: Structure flawlessly verified by scraper. 6 complete commands mapped and functioning. Core personality is loaded properly, but 16 granular mind/ files are empty placeholders waiting for content, and know/refs.md is populated but not wired into tone.js.
